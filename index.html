@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder ZAKI</title>
+    <style>
+        *{padding: 0;margin: 0;}
+
+    /* body{background-image: linear-gradient(to right,black,blanchedalmond);} */
+        
+        header{width: 100%; height: 100px;background-color: black;}
+
+        nav{width: 70%; height: 100%; float: left; text-align: center;}
+
+        header div{float: right;height: 100%; width: 30%;}
+
+        nav ul{list-style-type: none;padding: 0;margin: 0;}
+
+        nav li{display: inline-block;line-height: 100px;width: 100px;}
+    
+        nav li a{color: yellow; text-decoration:none;
+     font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;}
+
+     header div img{height: 100%;}
+
+     header div h2{line-height: 100px; color:yellow;
+        padding: 0px 20px ; float: left;}
+
+     main{width: 100%;height: 450px;}
+
+     main article{width: 70%; height: 100%;position: relative; float: right;
+     animation-name: colors; animation-duration: 10s; animation-iteration-count: infinite;}
+
+     main article div{background-color: black;width: 50%;
+     height: 180px; text-align: center; border-radius: 20px; padding: 0px 20px;
+     position: absolute;left: 50%; top: 50%;transform: translate(-50%, -50%);}
+
+     main article div h3{padding: 20px 0px; border-bottom: solid orange 3px;
+     color: yellow;}
+
+     p{color: yellowgreen;}
+
+     aside{width: 30%;height: 100%;
+     background:linear-gradient(to right,orange,yellow);
+     text-align: center;float: left;}
+
+     aside img{width: 90%;object-fit: cover;padding: 10px 0px;border-radius: 20px; max-height: 70%;}
+     
+     aside h1{padding: 20px 0px; border-bottom: solid black 3px;}
+
+     footer{width: 100%;height: 200px;background-color: black;}
+
+     .div1{width: 100%;height: 100%;display: flex;justify-content:space-around;}
+
+     .div1 img{width: 33%;object-fit: cover;margin: 10px 0px;}
+
+     .div2{background-color: yellow;}
+
+     .div2 img{width: 40px;margin: 0px 20px;}
+
+     fieldset{width: 100%;text-align: center;}
+
+     fieldset legend{color: black; font-weight: bold;}
+
+     nav li:hover{background-color: rgb(17, 178, 222); color: red;}
+     a{text-decoration: none;}
+
+@keyframes colors{
+    0%{background:linear-gradient(to right,yellow,black)}
+    50%{background:linear-gradient(to right,black,yellow)}
+    100%{background:linear-gradient(to right, gray,black,white)
+}}
+
+@media   (max-width:860px){
+    header div{width:40%;}
+    nav{width: 60%;}
+    }
+
+@media   (max-width:640px){
+    header div{width:45%;}
+    nav{width: 55%;}
+    }
+
+@media (max-width:573px){
+    header { width: 100%; height: auto; text-align: center;}
+header div { width: 100%;}
+header div h2 {line-height:normal ;float: none;}
+header div img {height: 100px;}
+nav { width: 100%; height: auto; float: none; text-align: center;}
+main { width: 100%; height: auto;}
+aside {width: 100%;height: auto; float: none;}
+aside img {width: 95%;height: auto;}
+aside h1 {padding: 20px 0px; height: auto;}
+main article{float: none;width: 100%;height: 180px;}
+main article div {width: 90%;height: 180px;}
+.div2 img {width: 30px;}
+}
+
+    
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h2> Coder Zaki </h2>
+          <a href="#"> <img src="/logo/htmllogo.png"> </a> 
+        </div>
+
+        <nav>
+            <ul>
+            <li> <a href="#">Home Page</a> </li>
+            <li> <a href="#">Videos</a> </li>
+            <li> <a href="#">Playlists</a> </li>
+           </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <img src="/images/nat1 (1).jpg">
+                <h1>Travel & Nature </h1>
+        </aside>
+        <article>
+            <div>
+                <h3>Programmer In learning</h3>
+                <p>I'm Zaki from morocco, I'm learnig Coding with Shiyar Jamo. 
+                    Html, Css ...
+                </p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="div1">
+            <img src="/images/nat1 (2).jpg">
+            <img src="/images/nat1 (3).jpg">
+            <img src="/images/nat4.jpg">
+        </div>
+        <div class="div2">
+            <fieldset>
+                <legend> Contact us </legend>
+               <a href="#"> <img src="/logo/fb2.png"> </a>
+               <a href="#"> <img src="/logo/inst2.png"> </a>
+               <a href="#"> <img src="/logo/telg2.png"> </a> 
+               <a href="#"> <img src="/logo/twitter2.png"> </a> 
+               <a href="#"> <img src="/logo/ytb2.png"> </a> 
+            </fieldset>
+        </div>
+    </footer>
+    
+</body>
+</html>
